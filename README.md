@@ -269,5 +269,5 @@ phpcs --standard=PSR2 tests
 
 ## Authors
 
-- [Marcelo Jacobus](https://github.com/mjacobus)
-
+- Originated by [Marcelo Jacobus](https://github.com/mjacobus)
+- Modified by [Sittiphol Phanvilai](https://github.com/nuuneoi)
