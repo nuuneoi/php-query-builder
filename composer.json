@@ -4,9 +4,13 @@
     "license": "MIT",
     "authors": [
         {
+            "name": "Sittiphol Phanvilai",
+            "email": "sittiphol@gmail.com"
+        },
+        {
             "name": "Marcelo Jacobus",
             "email": "marcelo.jacobus@gmail.com"
-        }
+        }	
     ],
     "require": {
         "php-objects/php-objects": "0.9.*"

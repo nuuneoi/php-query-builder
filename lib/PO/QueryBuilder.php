@@ -11,7 +11,7 @@ use PO\QueryBuilder\Statements\Delete;
  * Helper for building classes
  * @author Marcelo Jacobus <marcelo.jacobus@gmail.com>
  */
-class QueryBuilder extends Select
+class QueryBuilder\
 {
 
     /**
@@ -20,7 +20,7 @@ class QueryBuilder extends Select
      * @params array $params The select filds for the select builder
      * @return Select
      */
-    public static function factorySelect($params = array())
+    public static function select($params = array())
     {
         $select = new Select();
         $select->select($params);
