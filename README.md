@@ -48,10 +48,10 @@ This is an example of select query.
 $fields = array('u.name AS name', 'r.name AS role');
 
 // Selecting via factory
-$select = PO\QueryBuilder::factorySelect($fields);
+$select = PO\QueryBuilder::select($fields);
 
 // Selecting via the select method
-$select = PO\QueryBuilder::factorySelect()
+$select = PO\QueryBuilder::select()
     ->select($fields);
 
 // or alternatively
@@ -120,7 +120,26 @@ $update->toSql(array(
 
 ### DELETE
 
-TODO: Implement
+- Applies [limit](#limit)
+- Applies [where](#where)
+- Applies [orderBy](#order-by)
+- Applies [placeholders](#using-placeholders)
+
+```php
+$delete = PO\QueryBuilder::delete('users');
+
+// or
+$delete = new PO\QueryBuilder\Statements\Delete;
+$delete->from('users');
+
+// setting values and conditions
+
+$delete->where('email', ':email');
+
+$delete->toSql();
+
+// DELETE FROM users WHERE email = 'admin@email.com'
+```
 
 ### WHERE
 
