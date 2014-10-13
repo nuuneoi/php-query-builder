@@ -1,5 +1,5 @@
 {
-    "name": "php-objects/query-builder",
+    "name": "php-objects/php-query-builder",
     "description": "Query Builder - Making SQL composing easier",
     "license": "MIT",
     "authors": [
