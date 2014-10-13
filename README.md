@@ -23,7 +23,7 @@ Append the lib to your requirements key in your composer.json.
     // [..]
     require: {
         // append this line to your requirements
-        "php-objects/query-builder": "dev-master"
+        "php-objects/php-query-builder": "dev-master"
     }
 }
 ```
