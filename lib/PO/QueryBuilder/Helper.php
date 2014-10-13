@@ -62,8 +62,9 @@ class Helper
     public function doubleQuote($value)
     {
         $escaped =  str_replace('"', '\"', $value);
+        $escaped =  str_replace('\u', '\\\u', $escaped);
 
-        return '"' . $escaped . '"';
+        return '"' . utf8_encode($escaped) . '"';
     }
 
     /**
@@ -75,8 +76,9 @@ class Helper
     public function singleQuote($value)
     {
         $escaped =  str_replace("'", "\'", $value);
+        $escaped =  str_replace('\u', '\\\u', $escaped);
 
-        return "'" . $escaped . "'";
+        return "'" . utf8_encode($escaped) . "'";
     }
 
     /**

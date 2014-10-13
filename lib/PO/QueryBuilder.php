@@ -5,6 +5,7 @@ namespace PO;
 use PO\QueryBuilder\Statements\Select;
 use PO\QueryBuilder\Statements\Update;
 use PO\QueryBuilder\Statements\Insert;
+use PO\QueryBuilder\Statements\Delete;
 
 /**
  * Helper for building classes
@@ -59,5 +60,18 @@ class QueryBuilder extends Select
         }
 
         return $query;
+    }
+
+    /**
+     * Delete Builder
+     *
+     * @params array $params The delete filds for the delete builder
+     * @return Select
+     */
+    public static function delete()
+    {
+        $delete = new Delete();
+
+        return $delete;
     }
 }
